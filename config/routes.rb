@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :events
   get 'welcome/index'
   root to: 'welcome#index'
   get '/auth/:provider/callback' => 'sessions#create'
